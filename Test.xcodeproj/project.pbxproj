@@ -7,9 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E472D1B01E15C1E1005D6726 /* CustomTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E472D1AF1E15C1E1005D6726 /* CustomTableTableViewController.m */; };
-		E472D1B41E15D0E3005D6726 /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E472D1B21E15D0E3005D6726 /* DetailTableViewCell.m */; };
-		E472D1B51E15D0E3005D6726 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E472D1B31E15D0E3005D6726 /* DetailTableViewCell.xib */; };
+		8AD7EC4F1E16B16A00A8C09F /* TelijoTableTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7EC4D1E16B16A00A8C09F /* TelijoTableTableViewController.xib */; };
+		8AD7EC531E16B35A00A8C09F /* TelijoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD7EC511E16B35A00A8C09F /* TelijoTableViewCell.m */; };
+		8AD7EC541E16B35A00A8C09F /* TelijoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7EC521E16B35A00A8C09F /* TelijoTableViewCell.xib */; };
+		8AD7EC581E16C4E900A8C09F /* imagenTaxista.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7EC571E16C4E900A8C09F /* imagenTaxista.png */; };
+		8AD7EC5A1E16C9D700A8C09F /* btn_vermapa_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7EC591E16C9D700A8C09F /* btn_vermapa_pressed.png */; };
+		8AD7EC5C1E16CA1500A8C09F /* btn_vermapa_active.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7EC5B1E16CA1500A8C09F /* btn_vermapa_active.png */; };
+		8AD7EC5E1E16CA9B00A8C09F /* btn_morado.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7EC5D1E16CA9B00A8C09F /* btn_morado.png */; };
+		8AD7EC601E16CB9600A8C09F /* imagenTaxista@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD7EC5F1E16CB9600A8C09F /* imagenTaxista@2x.png */; };
+		E472D1B01E15C1E1005D6726 /* TelijoTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E472D1AF1E15C1E1005D6726 /* TelijoTableTableViewController.m */; };
+		E472D1B41E15D0E3005D6726 /* TelijoExpandableTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E472D1B21E15D0E3005D6726 /* TelijoExpandableTableViewCell.m */; };
+		E472D1B51E15D0E3005D6726 /* TelijoExpandableTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E472D1B31E15D0E3005D6726 /* TelijoExpandableTableViewCell.xib */; };
 		E4F56AC71E157A6C00D3D12A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F56AC61E157A6C00D3D12A /* main.m */; };
 		E4F56ACA1E157A6C00D3D12A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F56AC91E157A6C00D3D12A /* AppDelegate.m */; };
 		E4F56ACD1E157A6C00D3D12A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F56ACC1E157A6C00D3D12A /* ViewController.m */; };
@@ -23,11 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E472D1AE1E15C1E1005D6726 /* CustomTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTableTableViewController.h; sourceTree = "<group>"; };
-		E472D1AF1E15C1E1005D6726 /* CustomTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTableTableViewController.m; sourceTree = "<group>"; };
-		E472D1B11E15D0E3005D6726 /* DetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
-		E472D1B21E15D0E3005D6726 /* DetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
-		E472D1B31E15D0E3005D6726 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		8AD7EC4D1E16B16A00A8C09F /* TelijoTableTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TelijoTableTableViewController.xib; sourceTree = "<group>"; };
+		8AD7EC501E16B35A00A8C09F /* TelijoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelijoTableViewCell.h; sourceTree = "<group>"; };
+		8AD7EC511E16B35A00A8C09F /* TelijoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelijoTableViewCell.m; sourceTree = "<group>"; };
+		8AD7EC521E16B35A00A8C09F /* TelijoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TelijoTableViewCell.xib; sourceTree = "<group>"; };
+		8AD7EC571E16C4E900A8C09F /* imagenTaxista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imagenTaxista.png; sourceTree = "<group>"; };
+		8AD7EC591E16C9D700A8C09F /* btn_vermapa_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_vermapa_pressed.png; sourceTree = "<group>"; };
+		8AD7EC5B1E16CA1500A8C09F /* btn_vermapa_active.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_vermapa_active.png; sourceTree = "<group>"; };
+		8AD7EC5D1E16CA9B00A8C09F /* btn_morado.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btn_morado.png; sourceTree = "<group>"; };
+		8AD7EC5F1E16CB9600A8C09F /* imagenTaxista@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "imagenTaxista@2x.png"; sourceTree = "<group>"; };
+		E472D1AE1E15C1E1005D6726 /* TelijoTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelijoTableTableViewController.h; sourceTree = "<group>"; };
+		E472D1AF1E15C1E1005D6726 /* TelijoTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelijoTableTableViewController.m; sourceTree = "<group>"; };
+		E472D1B11E15D0E3005D6726 /* TelijoExpandableTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TelijoExpandableTableViewCell.h; sourceTree = "<group>"; };
+		E472D1B21E15D0E3005D6726 /* TelijoExpandableTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TelijoExpandableTableViewCell.m; sourceTree = "<group>"; };
+		E472D1B31E15D0E3005D6726 /* TelijoExpandableTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TelijoExpandableTableViewCell.xib; sourceTree = "<group>"; };
 		E4F56AC21E157A6C00D3D12A /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F56AC61E157A6C00D3D12A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E4F56AC81E157A6C00D3D12A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,6 +72,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8AD7EC551E16B36300A8C09F /* Custom Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8AD7EC501E16B35A00A8C09F /* TelijoTableViewCell.h */,
+				8AD7EC511E16B35A00A8C09F /* TelijoTableViewCell.m */,
+				8AD7EC521E16B35A00A8C09F /* TelijoTableViewCell.xib */,
+				E472D1B11E15D0E3005D6726 /* TelijoExpandableTableViewCell.h */,
+				E472D1B21E15D0E3005D6726 /* TelijoExpandableTableViewCell.m */,
+				E472D1B31E15D0E3005D6726 /* TelijoExpandableTableViewCell.xib */,
+			);
+			name = "Custom Cells";
+			sourceTree = "<group>";
+		};
+		8AD7EC561E16B37700A8C09F /* Table View */ = {
+			isa = PBXGroup;
+			children = (
+				E472D1AE1E15C1E1005D6726 /* TelijoTableTableViewController.h */,
+				E472D1AF1E15C1E1005D6726 /* TelijoTableTableViewController.m */,
+				8AD7EC4D1E16B16A00A8C09F /* TelijoTableTableViewController.xib */,
+			);
+			name = "Table View";
+			sourceTree = "<group>";
+		};
 		E4F56AB91E157A6B00D3D12A = {
 			isa = PBXGroup;
 			children = (
@@ -79,11 +119,8 @@
 				E4F56ACB1E157A6C00D3D12A /* ViewController.h */,
 				E4F56ACC1E157A6C00D3D12A /* ViewController.m */,
 				E4F56ACE1E157A6C00D3D12A /* Main.storyboard */,
-				E472D1AE1E15C1E1005D6726 /* CustomTableTableViewController.h */,
-				E472D1AF1E15C1E1005D6726 /* CustomTableTableViewController.m */,
-				E472D1B11E15D0E3005D6726 /* DetailTableViewCell.h */,
-				E472D1B21E15D0E3005D6726 /* DetailTableViewCell.m */,
-				E472D1B31E15D0E3005D6726 /* DetailTableViewCell.xib */,
+				8AD7EC561E16B37700A8C09F /* Table View */,
+				8AD7EC551E16B36300A8C09F /* Custom Cells */,
 				E4F56AD11E157A6C00D3D12A /* Assets.xcassets */,
 				E4F56AD31E157A6C00D3D12A /* LaunchScreen.storyboard */,
 				E4F56AE51E157B2300D3D12A /* SMSegment.swift */,
@@ -99,6 +136,11 @@
 		E4F56AC51E157A6C00D3D12A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8AD7EC571E16C4E900A8C09F /* imagenTaxista.png */,
+				8AD7EC5F1E16CB9600A8C09F /* imagenTaxista@2x.png */,
+				8AD7EC5B1E16CA1500A8C09F /* btn_vermapa_active.png */,
+				8AD7EC591E16C9D700A8C09F /* btn_vermapa_pressed.png */,
+				8AD7EC5D1E16CA9B00A8C09F /* btn_morado.png */,
 				E4F56AC61E157A6C00D3D12A /* main.m */,
 			);
 			name = "Supporting Files";
@@ -165,8 +207,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4F56AD51E157A6C00D3D12A /* LaunchScreen.storyboard in Resources */,
+				8AD7EC4F1E16B16A00A8C09F /* TelijoTableTableViewController.xib in Resources */,
+				8AD7EC601E16CB9600A8C09F /* imagenTaxista@2x.png in Resources */,
+				8AD7EC581E16C4E900A8C09F /* imagenTaxista.png in Resources */,
+				8AD7EC541E16B35A00A8C09F /* TelijoTableViewCell.xib in Resources */,
+				8AD7EC5E1E16CA9B00A8C09F /* btn_morado.png in Resources */,
 				E4F56AD21E157A6C00D3D12A /* Assets.xcassets in Resources */,
-				E472D1B51E15D0E3005D6726 /* DetailTableViewCell.xib in Resources */,
+				E472D1B51E15D0E3005D6726 /* TelijoExpandableTableViewCell.xib in Resources */,
+				8AD7EC5C1E16CA1500A8C09F /* btn_vermapa_active.png in Resources */,
+				8AD7EC5A1E16C9D700A8C09F /* btn_vermapa_pressed.png in Resources */,
 				E4F56AD01E157A6C00D3D12A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -180,10 +229,11 @@
 			files = (
 				E4F56ACD1E157A6C00D3D12A /* ViewController.m in Sources */,
 				E4F56AE91E157B2300D3D12A /* SMSegment.swift in Sources */,
-				E472D1B01E15C1E1005D6726 /* CustomTableTableViewController.m in Sources */,
-				E472D1B41E15D0E3005D6726 /* DetailTableViewCell.m in Sources */,
+				E472D1B01E15C1E1005D6726 /* TelijoTableTableViewController.m in Sources */,
+				E472D1B41E15D0E3005D6726 /* TelijoExpandableTableViewCell.m in Sources */,
 				E4F56AEC1E157B2300D3D12A /* SMSegmentViewConstants.swift in Sources */,
 				E4F56AEB1E157B2300D3D12A /* SMSegmentView.swift in Sources */,
+				8AD7EC531E16B35A00A8C09F /* TelijoTableViewCell.m in Sources */,
 				E4F56ACA1E157A6C00D3D12A /* AppDelegate.m in Sources */,
 				E4F56AEA1E157B2300D3D12A /* SMSegmentAppearance.swift in Sources */,
 				E4F56AC71E157A6C00D3D12A /* main.m in Sources */,

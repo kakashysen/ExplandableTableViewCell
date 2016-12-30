@@ -1,29 +1,27 @@
 //
-//  DetailTableViewCell.m
+//  TelijoTableViewCell.m
 //  Test
 //
-//  Created by Jose Aponte on 12/29/16.
+//  Created by Jose Aponte on 12/30/16.
 //  Copyright © 2016 jappsku. All rights reserved.
 //
 
-#import "DetailTableViewCell.h"
+#import "TelijoTableViewCell.h"
 
-@implementation DetailTableViewCell
+@implementation TelijoTableViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+    
+    self.driverImage.layer.cornerRadius = self.driverImage.frame.size.height / 2;
+    self.driverImage.layer.masksToBounds = YES;
+    
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
-}
-
-- (IBAction)actionButton:(id)sender
-{
-  NSLog(@"action Button clicked");
 }
 
 @end

@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "Test-Swift.h"
 
-#import "CustomTableTableViewController.h"
+#import "TelijoTableTableViewController.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) IBOutlet UIView *container;
@@ -60,8 +60,8 @@
 
 -(void)selectedSegment:(SMSegmentView*) segment
 {
-  UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-  CustomTableTableViewController *tbc = [storyboard instantiateViewControllerWithIdentifier:@"CustomTableTableViewController"];
+  
+  TelijoTableTableViewController *tbc = [[TelijoTableTableViewController alloc] initWithNibName:@"TelijoTableTableViewController" bundle:nil];
   [self.navigationController pushViewController:tbc animated:YES];
 }
 

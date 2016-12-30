@@ -1,5 +1,5 @@
 //
-//  CustomTableTableViewController.h
+//  DetailTableViewCell.h
 //  Test
 //
 //  Created by Jose Aponte on 12/29/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomTableTableViewController : UITableViewController
+@interface TelijoExpandableTableViewCell : UITableViewCell
 
 @end

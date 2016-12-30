@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailCell" id="KGk-i7-Jjw" userLabel="Expandable Cell" customClass="TelijoExpandableTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="199"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xMe-Jo-uPG">
+                        <rect key="frame" x="0.0" y="8" width="320" height="135"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="135" id="rqz-YF-J4f"/>
+                        </constraints>
+                    </tableView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVs-yc-3Xj">
+                        <rect key="frame" x="0.0" y="148" width="320" height="49"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <state key="normal" title="Elegir" backgroundImage="btn_vermapa_active.png">
+                            <color key="titleColor" red="0.15315786000000001" green="0.1533069313" blue="0.15318098660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="selected" backgroundImage="btn_morado.png"/>
+                        <state key="highlighted" backgroundImage="btn_morado.png"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WVs-yc-3Xj" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="6V1-xX-44G"/>
+                    <constraint firstAttribute="trailing" secondItem="xMe-Jo-uPG" secondAttribute="trailing" id="8ck-Nv-dDt"/>
+                    <constraint firstItem="xMe-Jo-uPG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9Qo-6G-aYP"/>
+                    <constraint firstItem="WVs-yc-3Xj" firstAttribute="top" secondItem="xMe-Jo-uPG" secondAttribute="bottom" constant="5" id="D4R-Do-SRT"/>
+                    <constraint firstItem="xMe-Jo-uPG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YC0-ft-yZt"/>
+                    <constraint firstItem="WVs-yc-3Xj" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="h34-gW-48q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="tableView" destination="xMe-Jo-uPG" id="Sco-0i-y8h"/>
+            </connections>
+            <point key="canvasLocation" x="-21" y="-59"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_morado.png" width="644" height="116"/>
+        <image name="btn_vermapa_active.png" width="196" height="49"/>
+    </resources>
+</document>
