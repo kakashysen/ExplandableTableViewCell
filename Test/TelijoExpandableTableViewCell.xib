@@ -27,9 +27,13 @@
                         </constraints>
                     </tableView>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WVs-yc-3Xj">
-                        <rect key="frame" x="0.0" y="148" width="320" height="49"/>
+                        <rect key="frame" x="8" y="148" width="304" height="40"/>
+                        <color key="backgroundColor" red="0.99233895540237427" green="0.84654158353805542" blue="0.20809817314147949" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="4VN-DL-by9"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                        <state key="normal" title="Elegir" backgroundImage="btn_vermapa_active.png">
+                        <state key="normal" title="Elegir">
                             <color key="titleColor" red="0.15315786000000001" green="0.1533069313" blue="0.15318098660000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
                         <state key="selected" backgroundImage="btn_morado.png"/>
@@ -41,11 +45,13 @@
                     <constraint firstAttribute="trailing" secondItem="xMe-Jo-uPG" secondAttribute="trailing" id="8ck-Nv-dDt"/>
                     <constraint firstItem="xMe-Jo-uPG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="9Qo-6G-aYP"/>
                     <constraint firstItem="WVs-yc-3Xj" firstAttribute="top" secondItem="xMe-Jo-uPG" secondAttribute="bottom" constant="5" id="D4R-Do-SRT"/>
+                    <constraint firstItem="WVs-yc-3Xj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="GUu-hp-bmI"/>
                     <constraint firstItem="xMe-Jo-uPG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YC0-ft-yZt"/>
-                    <constraint firstItem="WVs-yc-3Xj" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" id="h34-gW-48q"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WVs-yc-3Xj" secondAttribute="trailing" id="icL-wA-CFZ"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="buttonSelectDriver" destination="WVs-yc-3Xj" id="pIR-pX-PE2"/>
                 <outlet property="tableView" destination="xMe-Jo-uPG" id="Sco-0i-y8h"/>
             </connections>
             <point key="canvasLocation" x="-21" y="-59"/>
@@ -53,6 +59,5 @@
     </objects>
     <resources>
         <image name="btn_morado.png" width="644" height="116"/>
-        <image name="btn_vermapa_active.png" width="196" height="49"/>
     </resources>
 </document>

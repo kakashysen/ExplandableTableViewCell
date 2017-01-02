@@ -14,5 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *driverImage;
 @property (weak, nonatomic) IBOutlet UILabel *driverName;
 @property (weak, nonatomic) IBOutlet UILabel *taxiPlates;
+@property (weak, nonatomic) IBOutlet UILabel *distance;
 
 @end

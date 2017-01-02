@@ -19,9 +19,6 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="79"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_morado.png" translatesAutoresizingMaskIntoConstraints="NO" id="EaF-Cr-jXG">
-                        <rect key="frame" x="-5" y="-21" width="330" height="120"/>
-                    </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="imagenTaxista.png" translatesAutoresizingMaskIntoConstraints="NO" id="8tJ-Gd-HFb">
                         <rect key="frame" x="8" y="4" width="70" height="70"/>
                         <constraints>
@@ -32,32 +29,37 @@
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Driver Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qox-vY-1Ev">
                         <rect key="frame" x="86" y="4" width="226" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <color key="textColor" red="0.94867008919999996" green="0.94938892129999997" blue="0.94878143069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WXZ 789" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gmw-L2-ZAU">
-                        <rect key="frame" x="86" y="37" width="226" height="16.5"/>
+                        <rect key="frame" x="86" y="28.5" width="226" height="16.5"/>
                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
-                        <color key="textColor" red="0.94867008919999996" green="0.94938892129999997" blue="0.94878143069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 mts" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KfT-Ie-FgV">
+                        <rect key="frame" x="277" y="57.5" width="35" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="gmw-L2-ZAU" firstAttribute="top" secondItem="qox-vY-1Ev" secondAttribute="bottom" constant="13.5" id="4G6-W8-eOX"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="KfT-Ie-FgV" secondAttribute="trailing" id="1xV-41-Uh1"/>
+                    <constraint firstItem="gmw-L2-ZAU" firstAttribute="top" secondItem="qox-vY-1Ev" secondAttribute="bottom" constant="5" id="4G6-W8-eOX"/>
                     <constraint firstItem="qox-vY-1Ev" firstAttribute="top" secondItem="8tJ-Gd-HFb" secondAttribute="top" id="Fwx-D8-H3o"/>
-                    <constraint firstItem="EaF-Cr-jXG" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Hod-R9-HwS"/>
-                    <constraint firstItem="EaF-Cr-jXG" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" constant="40" id="K63-LT-Xrp"/>
                     <constraint firstItem="gmw-L2-ZAU" firstAttribute="trailing" secondItem="qox-vY-1Ev" secondAttribute="trailing" id="SeQ-MQ-vXB"/>
-                    <constraint firstItem="EaF-Cr-jXG" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" constant="10" id="TfO-HZ-47A"/>
                     <constraint firstAttribute="leadingMargin" secondItem="8tJ-Gd-HFb" secondAttribute="leading" id="bHB-oN-Zgo"/>
                     <constraint firstItem="gmw-L2-ZAU" firstAttribute="leading" secondItem="qox-vY-1Ev" secondAttribute="leading" id="blW-P6-jGO"/>
-                    <constraint firstItem="EaF-Cr-jXG" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="c6g-Rn-oBV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="KfT-Ie-FgV" secondAttribute="bottom" id="fH8-QQ-GCE"/>
                     <constraint firstAttribute="trailingMargin" secondItem="qox-vY-1Ev" secondAttribute="trailing" id="ihF-9Q-hOv"/>
                     <constraint firstItem="8tJ-Gd-HFb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="sZg-zN-d9h"/>
                     <constraint firstItem="qox-vY-1Ev" firstAttribute="leading" secondItem="8tJ-Gd-HFb" secondAttribute="trailing" constant="8" id="tbM-4C-SzX"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="distance" destination="KfT-Ie-FgV" id="h5D-MW-5xZ"/>
                 <outlet property="driverImage" destination="8tJ-Gd-HFb" id="Ad4-p7-ZUe"/>
                 <outlet property="driverName" destination="qox-vY-1Ev" id="aUt-kh-SFs"/>
                 <outlet property="taxiPlates" destination="gmw-L2-ZAU" id="XbD-UH-itn"/>
@@ -66,7 +68,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="btn_morado.png" width="644" height="116"/>
         <image name="imagenTaxista.png" width="70" height="70"/>
     </resources>
 </document>

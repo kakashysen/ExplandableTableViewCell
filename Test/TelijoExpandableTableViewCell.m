@@ -11,6 +11,7 @@
 @interface TelijoExpandableTableViewCell()<UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIButton *buttonSelectDriver;
 
 @end
 
@@ -21,6 +22,17 @@
     // Initialization code
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    self.layer.cornerRadius = 2.0;
+    self.layer.shadowRadius = 2.0;
+    self.layer.shadowOpacity = 0.5;
+    self.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+    self.layer.shadowOffset = CGSizeMake(2, 2);
+    
+    self.buttonSelectDriver.layer.cornerRadius = 2;
+    self.buttonSelectDriver.layer.shadowRadius = 2;
+    self.buttonSelectDriver.layer.shadowOpacity = 0.5;
+    self.buttonSelectDriver.layer.shadowColor = [UIColor lightGrayColor].CGColor;
+    self.buttonSelectDriver.layer.shadowOffset = CGSizeMake(2, 2);
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -28,6 +40,18 @@
 
     // Configure the view for the selected state
 }
+
+
+- (void)setFrame:(CGRect)frame {
+    if (self.superview) {
+        float cellWidth = self.superview.frame.size.width - 20;
+        frame.origin.x = (self.superview.frame.size.width - cellWidth) / 2;
+        frame.size.width = cellWidth;
+    }
+    
+    [super setFrame:frame];
+}
+
 
 - (IBAction)actionButton:(id)sender
 {
